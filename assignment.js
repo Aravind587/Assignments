@@ -86,15 +86,9 @@ function update(index){
 
 function Delete(index){
 
-    if(confirm("Are you sure you want to delete this employee?")){
-
-        alldata.splice(index,1);
-
         localStorage.setItem("alldata",JSON.stringify(alldata));
 
         showdata();
-
-    }
 
 }
 
